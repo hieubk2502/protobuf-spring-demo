@@ -30,25 +30,12 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>4.28.2</version>
         </dependency>
 
-
-<!--        <dependency>-->
-<!--            <groupId>com.google.protobuf</groupId>-->
-<!--            <artifactId>protobuf-java-util</artifactId>-->
-<!--            <version>4.28.2</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>com.googlecode.protobuf-java-format</groupId>-->
-<!--            <artifactId>protobuf-java-format</artifactId>-->
-<!--            <version>1.4</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -75,15 +62,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <compilerArgs>
-                        <arg>-parameters</arg>
-                    </compilerArgs>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
