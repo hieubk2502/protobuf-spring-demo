@@ -1,0 +1,17 @@
+syntax = "proto3";
+package com.example.protobuf_spring.model;
+
+option java_package = "com.example.protobuf_spring.model";
+option java_outer_classname = "SpaceShipProto";
+
+message SpaceShip {
+  string mode = 1;
+  string captain = 2;
+  int32 fuel = 3;
+  CargoType cargo = 4;
+
+  enum CargoType {
+    FRUIT = 0;
+    WEAPONS = 1;
+  }
+}
